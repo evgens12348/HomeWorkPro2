@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inquirer</title>
+</head>
+<body>
+<form action="/inquirer" method="POST">
+    <label><strong>Enter your name:</strong></label><br>
+    <input type="text" size="40" id="name" name="name"><br>
+    <label><strong>Enter your surname:</strong></label><br>
+    <input type="text" size="40" id="surname" name="surname"><br>
+    <label><strong> Age: </strong></label>
+    <input type="number" value="10" id="age" name="age" min="10" max="100"><br/>
+    <fieldset>
+        <legend>Choose the color</legend>
+        <input type="radio" name="question_1" value="Red"/><label>Red</label>
+        <input type="radio" name="question_1" value="Orange"/><label>Orange</label>
+        <input type="radio" name="question_1" value="Yellow"/><label>Yellow</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose the best programming language</legend>
+        <input type="radio" name="question_2" value="Pascal"/><label>Pascal</label>
+        <input type="radio" name="question_2" value="Java"/><label>Java</label>
+        <input type="radio" name="question_2" value="Python"/><label>Python</label>
+    </fieldset>
+    <input type="submit" value="Send"/>
+</form>
+</body>
+</html>
